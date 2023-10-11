@@ -3,6 +3,7 @@
 import Benefit from '@/components/benifit/Benefit'
 import Brand from '@/components/branding/Brand'
 import Cta from '@/components/cta/Cta'
+import Cta2 from '@/components/cta2/Cta2'
 import Detection from '@/components/detection/Detection'
 import Market from '@/components/market/Market'
 import MarketV2 from '@/components/market/MarketV2'
@@ -10,6 +11,7 @@ import Navbar from '@/components/shared/Navbar'
 import FocusedSlider from '@/components/slider/FocusedSlider'
 import RandomPositionSlider from '@/components/slider/RandomPositionSlider'
 import SwiperAutoSlider from '@/components/slider/Slider'
+import Spec from '@/components/spec/Spec'
 import Specification from '@/components/specification/Specification'
 import WhyChooseUs from '@/components/why/WhyChooseUs'
 import gsap from 'gsap'
@@ -55,11 +57,9 @@ export default function Home() {
       <RandomPositionSlider />
       <main className="px-4 md:px-0">
         <WhyChooseUs />
-        {/* <Benefit /> */}
         <Detection />
-        <Specification />
-        <Brand />
-        <Cta />
+        <Spec />
+        <Cta2 />
       </main>
     </>
   )

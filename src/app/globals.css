@@ -12,8 +12,22 @@ html {
   border-radius: 0.7rem 0 0.7rem 0 !important;
 }
 
+.right_top_left_bottom_radius {
+  border-radius: 0 1rem 0 1rem !important;
+}
+
 .left_top_right_bottom_radius_big {
   border-radius: 1.5rem 0 1.5rem 0 !important;
+}
+.left_bottom_radius {
+  
+  border-radius: 0 0 0 4rem !important;
+}
+.right_bottom_radius {
+  border-radius: 0 0 4rem 0 !important;
+}
+.top_left_radius{
+  border-radius: 4rem 0 0 0 !important;
 }
 
 /* Swiper start */
@@ -94,4 +108,21 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* Spec */
+.spec_bg {
+  background-image: url('../assets/specTwo/bg_one.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.spec_bg_small {
+  background-image: url('../assets/specTwo/bg_two.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
 }
