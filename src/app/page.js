@@ -10,6 +10,7 @@ import FocusedSlider from '@/components/slider/FocusedSlider'
 import RandomPositionSlider from '@/components/slider/RandomPositionSlider'
 import SwiperAutoSlider from '@/components/slider/Slider'
 import Specification from '@/components/specification/Specification'
+import WhyChooseUs from '@/components/why/WhyChooseUs'
 import gsap from 'gsap'
 import { useEffect } from 'react'
 
@@ -50,12 +51,9 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      {/* <SwiperAutoSlider /> */}
-      {/* <FocusedSlider /> */}
       <RandomPositionSlider />
       <main className="px-4 md:px-0">
-        {/* <Market /> */}
-        <MarketV2 />
+        <WhyChooseUs />
         <Benefit />
         <Specification />
         <Brand />
