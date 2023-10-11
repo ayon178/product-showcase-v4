@@ -171,10 +171,10 @@ const RandomPositionSlider = () => {
               </div>
               {/* Text container */}
               <div className="w-full md:w-[50%] mt-10 md:mt-0 flex flex-col justify-start md:justify-end pr-0 md:pr-10">
-                <h1 className="slide-header-left text-primaryText text-2xl md:text-5xl text-center md:text-right slide-header font-extrabold">
+                <h1 className="slide-header-left text-white text-2xl md:text-5xl text-center md:text-right slide-header font-extrabold">
                   Text Writeup
                 </h1>
-                <p className="slide-text text-primaryText mt-10 font-semibold text-center md:text-right slide-text text-[.9rem] w-full ml-auto md:w-3/4">
+                <p className="slide-text text-white mt-10 font-semibold text-center md:text-right slide-text text-[.9rem] w-full ml-auto md:w-3/4">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Accusantium nemo nihil nobis eveniet ullam, earum dolorem
                   corporis! Quod unde debitis voluptate cumque cum atque
@@ -192,10 +192,10 @@ const RandomPositionSlider = () => {
             <div className="mt-5 md:flex container mx-auto ps-5 md:ps-10 items-center justify-between">
               {/* Text container */}
               <div className="w-full md:w-[50%] mt-10 md:mt-0 flex flex-col justify-start pr-0 md:pr-10">
-                <h1 className="slide-header-right text-primaryText text-2xl md:text-5xl text-center md:text-left slide-header font-extrabold">
+                <h1 className="slide-header-right text-white text-2xl md:text-5xl text-center md:text-left slide-header font-extrabold">
                   Text Writeup
                 </h1>
-                <p className="text-primaryText slide-text mt-10 font-semibold text-center md:text-left slide-text text-[.9rem] w-full mr-auto md:w-3/4">
+                <p className="text-white slide-text mt-10 font-semibold text-center md:text-left slide-text text-[.9rem] w-full mr-auto md:w-3/4">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Accusantium nemo nihil nobis eveniet ullam, earum dolorem
                   corporis! Quod unde debitis voluptate cumque cum atque

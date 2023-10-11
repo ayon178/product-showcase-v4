@@ -16,7 +16,7 @@ module.exports = {
         primary: '#FF9F34',
         secondary: '#17B598',
         tertiary: '#081F5E',
-        primaryText: '#161C24',
+        primaryText: '#152141',
         secondaryText: '#31F6D3',
         whiteText: '#FFFFFF',
         slate: {

@@ -3,6 +3,7 @@
 import Benefit from '@/components/benifit/Benefit'
 import Brand from '@/components/branding/Brand'
 import Cta from '@/components/cta/Cta'
+import Detection from '@/components/detection/Detection'
 import Market from '@/components/market/Market'
 import MarketV2 from '@/components/market/MarketV2'
 import Navbar from '@/components/shared/Navbar'
@@ -54,7 +55,8 @@ export default function Home() {
       <RandomPositionSlider />
       <main className="px-4 md:px-0">
         <WhyChooseUs />
-        <Benefit />
+        {/* <Benefit /> */}
+        <Detection />
         <Specification />
         <Brand />
         <Cta />
