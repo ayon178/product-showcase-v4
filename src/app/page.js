@@ -23,7 +23,7 @@ export default function Home() {
 
   const token =
     typeof window !== 'undefined'
-      ? window.localStorage.getItem('product_v3_token')
+      ? window.localStorage.getItem('product_v4_token')
       : null
 
   useEffect(() => {
