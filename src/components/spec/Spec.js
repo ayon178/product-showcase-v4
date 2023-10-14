@@ -7,11 +7,16 @@ import productTwo from '../../assets/slider/slider_2.png'
 import productThree from '../../assets/specTwo/product_three.png'
 import bullet from '../../assets/specTwo/bullet.png'
 
+import headerImage from '../../assets/specTwo/spec_text.png'
+import imageOne from '../../assets/specTwo/spec_top.png'
+import leftImage from '../../assets/specTwo/spec_left.png'
+import rightImage from '../../assets/specTwo/spec_right.png'
+
 const Spec = () => {
   return (
-    <div className="container mx-auto ">
-      <div className="flex flex-col items-end">
-        <Image
+    <div className="container mx-auto mt-16">
+      <div className="flex flex-col items-start">
+        {/* <Image
           src={border}
           alt="border"
           width={650}
@@ -20,10 +25,12 @@ const Spec = () => {
         />
         <h1 className="text-primaryText text-7xl font-bold z-10">
           Specification
-        </h1>
+        </h1> */}
+
+        <Image src={headerImage} alt="headerImage" width={650} height={300} />
 
         {/* Images */}
-        <div className="flex spec_bg right_top_left_bottom_radius mt-10">
+        {/* <div className="flex spec_bg right_top_left_bottom_radius mt-10">
           <Image
             src={productOne.src}
             alt="productOne"
@@ -54,7 +61,6 @@ const Spec = () => {
             </div>
           </div>
         </div>
-        {/* Small */}
         <div className="flex gap-4">
           <div className="flex spec_bg mt-10 left_bottom_radius">
             <Image
@@ -115,6 +121,18 @@ const Spec = () => {
                 <p className="text-white font-semibold">Status Check</p>
               </div>
             </div>
+          </div>
+        </div> */}
+
+        <div className="w-full">
+          <Image src={imageOne} alt="imageOne" className="mt-10" />
+        </div>
+        <div className="w-[95%] flex gap-4 ml-auto -mr-10">
+          <div className="w-[50%]">
+            <Image src={rightImage} alt="rightImage" className="mt-10" />
+          </div>
+          <div className="w-[50%] ">
+            <Image src={leftImage} alt="leftImage" className="mt-10" />
           </div>
         </div>
       </div>

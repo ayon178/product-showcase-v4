@@ -38,6 +38,9 @@ export default function Home() {
       duration: 0.1,
       ease: 'power3.inOut',
       backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      marginTop: 0,
+      paddingBottom: '1rem',
+      paddingTop: '1rem',
     })
 
     timeline.to(text, {
