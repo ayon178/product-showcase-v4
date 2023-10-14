@@ -20,13 +20,12 @@ html {
   border-radius: 1.5rem 0 1.5rem 0 !important;
 }
 .left_bottom_radius {
-  
   border-radius: 0 0 0 4rem !important;
 }
 .right_bottom_radius {
   border-radius: 0 0 4rem 0 !important;
 }
-.top_left_radius{
+.top_left_radius {
   border-radius: 4rem 0 0 0 !important;
 }
 
@@ -127,10 +126,9 @@ html {
   width: 50%;
 }
 
-
 /* Agency */
-.agency_bg{
-  background-image: url('../assets/slider/slider_bg_1.png');
+.agency_bg {
+  background-image: url('../assets/agency/agency_bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
