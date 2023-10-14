@@ -147,7 +147,7 @@ const RandomPositionSlider = () => {
 
               <div className="w-full md:w-[50%] overflow-hidden random_slide_image">
                 <Image
-                  src={slideThreeProduct}
+                  src={slideOneProduct}
                   alt="Royal Melbourne Hospital"
                   width="85%"
                   height="100%"
@@ -162,7 +162,7 @@ const RandomPositionSlider = () => {
             <div className="mt-5 md:flex container mx-auto ps-5 md:ps-10 items-center justify-between">
               <div className="w-full md:w-[50%] overflow-hidden random_slide_image">
                 <Image
-                  src={slideOneProduct}
+                  src={slideThreeProduct}
                   alt="Royal Melbourne Hospital"
                   width="85%"
                   height="100%"
