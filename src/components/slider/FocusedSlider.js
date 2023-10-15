@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { gsap } from 'gsap'
 import { AnimatePresence } from 'framer-motion'
-import mainImage from '../../assets/slider.JPG'
-import secondImage from '../../assets/slider.png'
-import thirdImage from '../../assets/market.jpg'
+import mainImage from '../../assets/slider/slide_1.jpg'
+import secondImage from '../../assets/slider/slide_2.jpg'
+import thirdImage from '../../assets/slider/slide_3.jpg'
 
 const images = [
   {
@@ -48,13 +48,13 @@ const FocusedSlider = () => {
         scale: 1.2,
         x:
           currentSlide === 0
-            ? -130
-            : currentSlide === 1
-            ? 70
-            : currentSlide === 2
             ? 130
+            : currentSlide === 1
+            ? -130
+            : currentSlide === 2
+            ? -130
             : 0,
-        y: currentSlide === 1 ? 90 : currentSlide === 2 ? -80 : 0,
+        y: currentSlide === 1 ? -80 : currentSlide === 2 ? -80 : 0,
         duration: 5,
         ease: 'power2.inOut',
       }
@@ -81,13 +81,24 @@ const FocusedSlider = () => {
             alt={images[currentSlide].alt}
             className="object-cover w-full h-full slide-img"
           />
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white">
-            <h1 className="text-5xl text-primaryText font-semibold">
+          <div
+            className={`absolute top-[40%] ${
+              currentSlide === 0
+                ? 'right-0'
+                : currentSlide === 1
+                ? 'left-1/4'
+                : 'left-1/4'
+            } transform -translate-x-1/2 -translate-y-1/2 text-white`}
+          >
+            <h1 className="text-5xl text-white font-semibold">
               {images[currentSlide].title}
             </h1>
-            <p className="text-lg text-primaryText font-semibold text-center mt-3">
+            <p className="text-lg text-white font-semibold text-center mt-3">
               {images[currentSlide].text}
             </p>
+            <div className="flex justify-center">
+              <button className="bg-primary px-4 py-2 pointer rounded-md text-primaryText mt-8">Call to Order</button>
+            </div>
           </div>
         </motion.div>
       </AnimatePresence>

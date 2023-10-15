@@ -70,7 +70,7 @@ const Navbar = () => {
 
           {/* <h1>LOGO</h1> */}
         </Link>
-        <ul className="text_color flex-row items-center gap-9 text-sm font-semibold text-primaryText hidden md:flex">
+        <ul className="text_color flex-row items-center gap-9 text-sm font-semibold text-white hidden md:flex">
           <li>
             <Link
               href="/#"

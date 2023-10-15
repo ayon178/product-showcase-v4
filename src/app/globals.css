@@ -134,3 +134,26 @@ html {
   background-repeat: no-repeat;
   width: 100%;
 }
+
+/* Detection */
+.detection_bg_one {
+  background-image: url('../assets/detection/bg_1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.detection_bg_two {
+  background-image: url('../assets/detection/bg_2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+/* Detextion */
+.text_strock {
+  -webkit-text-stroke: 3px #ff9f34;
+  color: #173176;
+}
