@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
         <div className="w-[90%]">
           <Image src={maskImage} alt="mask" width={300} height={300} />
           <Image src={border} alt="mask" width={300} height={300} />
-          <h1 className="text-2xl font-medium mt-4 text-primaryText text-justify">
+          <h1 className="text-xl font-medium mt-4 text-primaryText text-justify">
             {' '}
             Our mill maintence solutions are designed to save cost with
             Equipment Maintenance, Energy Conservation & Fire Safety. They are
