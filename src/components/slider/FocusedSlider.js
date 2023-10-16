@@ -10,20 +10,20 @@ const images = [
   {
     image: mainImage,
     alt: 'Image 1',
-    title: 'Slide One Title',
-    text: 'Slide One Text',
+    title: 'REVOLUTIONAR CONCEPT in EQUIPMENT MAINTENANCE',
+    text: 'Infrared Scanning / Thermography to assess the condition of your Electrical Machineries',
   },
   {
     image: secondImage,
     alt: 'Image 2',
-    title: 'Slide Two Title',
-    text: 'Slide Two Text',
+    title: 'Air we breathe is free, Compressed Air is NOT',
+    text: 'Accurately detect & locate the leaks in your production system',
   },
   {
     image: thirdImage,
     alt: 'Image 3',
-    title: 'Slide Three Title',
-    text: 'Slide Three Text',
+    title: 'Achieve Zero Air Leak',
+    text: 'Precisely quantify the Air Leaks,take proper measure to prevent wastage & damage',
   },
 ]
 
@@ -33,7 +33,7 @@ const FocusedSlider = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide(prevSlide => (prevSlide + 1) % images.length)
-    }, 5000)
+    }, 7000)
 
     return () => {
       clearInterval(interval)
@@ -55,7 +55,7 @@ const FocusedSlider = () => {
             ? -130
             : 0,
         y: currentSlide === 1 ? -80 : currentSlide === 2 ? -80 : 0,
-        duration: 5,
+        duration: 8,
         ease: 'power2.inOut',
       }
     )
@@ -74,7 +74,7 @@ const FocusedSlider = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1.5 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 2 }}
         >
           <img
             src={images[currentSlide].image.src}
@@ -83,21 +83,23 @@ const FocusedSlider = () => {
           />
           <div
             className={`absolute top-[40%] ${
-              currentSlide === 0
-                ? 'right-0'
-                : currentSlide === 1
-                ? 'left-1/4'
-                : 'left-1/4'
-            } transform -translate-x-1/2 -translate-y-1/2 text-white`}
+              currentSlide === 0 ? 'right-1 -mr-[40%]' : 'left-16 '
+            } transform -translate-y-1/2 text-white`}
           >
-            <h1 className="text-5xl text-white font-semibold">
+            <h1 className="text-5xl text-white font-semibold w-1/2">
               {images[currentSlide].title}
             </h1>
-            <p className="text-lg text-white font-semibold text-center mt-3">
+            <p
+              className={`text-lg  text-white font-semibold mt-3 ${
+                currentSlide === 0 ? 'w-1/2' : 'w-2/3'
+              }`}
+            >
               {images[currentSlide].text}
             </p>
-            <div className="flex justify-center">
-              <button className="bg-primary px-4 py-2 pointer rounded-md text-primaryText mt-8">Call to Order</button>
+            <div className="flex justify-start">
+              <button className="bg-primary px-4 py-2 pointer rounded-md text-primaryText mt-8">
+                Call to Order
+              </button>
             </div>
           </div>
         </motion.div>

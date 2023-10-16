@@ -70,7 +70,7 @@ const Agency = () => {
         <div className="flex items-center gap-4 mt-10">
           {/* First 3 items map */}
           {iconData.slice(0, 2).map((item, i) => (
-            <div key={i} className="flex items-center gap-2 ">
+            <div key={i} className="flex items-center gap-2">
               <Image src={item.icon} alt="icon" />
             </div>
           ))}
@@ -95,7 +95,7 @@ const Agency = () => {
           {imageData.map((image, i) => (
             <div
               key={i}
-              className="bg-white rounded-lg px-3 py-2 text-primaryText w-36 flex items-center justify-center flex-col gap-1"
+              className="bg-white rounded-lg px-7 py-2 text-primaryText w-40 flex items-center justify-center flex-col gap-1"
             >
               <Image src={image.image} alt="image" />
             </div>

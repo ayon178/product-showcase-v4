@@ -11,32 +11,32 @@ import whySimpleImage from '../../assets/why/why_simple.png'
 
 const WhyChooseUs = () => {
   return (
-    <div className="container items-center my-20 mx-auto flex justify-between">
-      <div className="w-[35%]">
-        <Image src={maskImage} alt="mask" width={300} height={300} />
-        <Image src={border} alt="mask" width={300} height={300} />
-        <h1 className="text-2xl font-semibold mt-4 text-primaryText">
-          {' '}
-          Our Mill maintenance
-          <br /> equipment is right for you
-        </h1>
-      </div>
-      <div className="flex flex-col items-end w-[70%] gap-4">
-        {/* <div className="w-full">
-          <Image src={productOne} alt="mask" width={'100%'} />
+    <div className="container items-center my-20 mx-auto flex justify-around">
+      <div className="flex justify-between w-full">
+        <div className="w-[90%]">
+          <Image src={maskImage} alt="mask" width={300} height={300} />
+          <Image src={border} alt="mask" width={300} height={300} />
+          <h1 className="text-2xl font-medium mt-4 text-primaryText text-justify">
+            {' '}
+            Our mill maintence solutions are designed to save cost with
+            Equipment Maintenance, Energy Conservation & Fire Safety. They are
+            ideal for Multi Industrial uses such as Textie Industry, Cement
+            Industry, Steel Industry, Automotive Industry & Power Plants /
+            Chemical Plants. These equipments are also usable in Shopping Malls,
+            Residential & Hospitality Sector, Software Parks etc.
+          </h1>
         </div>
-        <div className="flex w-full gap-4">
-          <Image src={productTwo} alt="mask" width={'50%'} />
-          <Image src={productThree} alt="mask" width={'50%'} />
-        </div> */}
-
-        <Image
-          src={whySimpleImage}
-          alt="mask"
-          width={'100%'}
-          height={'100%'}
-          objectFit="cover"
-        />
+      </div>
+      <div className="flex flex-col items-start w-full gap-4">
+        <div className="w-[70%] ">
+          <Image
+            src={whySimpleImage}
+            alt="mask"
+            width={'100%'}
+            height={'100%'}
+            objectFit="cover"
+          />
+        </div>
       </div>
     </div>
   )

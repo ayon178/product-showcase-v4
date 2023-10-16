@@ -9,8 +9,8 @@ import CustomCountUp from '../counter/CustomCountUp'
 
 const Detection = () => {
   return (
-    <div className="my-36">
-      <div className="detection_bg_one py-8 mb-16">
+    <div className="my-36 detection_bg_one">
+      <div className=" py-8 mb-16">
         <div className="container mx-auto">
           <Image
             src={detectionTextImage}
@@ -29,7 +29,7 @@ const Detection = () => {
           </div>
         </div>
       </div>
-      <div className="detection_bg_two py-8">
+      <div className=" py-8">
         <div className="container mx-auto">
           <div className="w-full mx-auto flex justify-between items-start">
             <Image src={textImage} width={850} height={400} alt="image" />

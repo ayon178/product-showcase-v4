@@ -27,7 +27,7 @@ const Spec = () => {
           Specification
         </h1> */}
 
-        <Image src={headerImage} alt="headerImage" width={650} height={300} />
+        <Image src={headerImage} alt="headerImage" width={500} height={300} />
 
         {/* Images */}
         {/* <div className="flex spec_bg right_top_left_bottom_radius mt-10">
@@ -124,15 +124,15 @@ const Spec = () => {
           </div>
         </div> */}
 
-        <div className="w-full">
+        <div className="w-full px-24">
           <Image src={imageOne} alt="imageOne" className="mt-10" />
         </div>
         <div className="w-[95%] flex gap-4 ml-auto -mr-10">
-          <div className="w-[50%]">
-            <Image src={rightImage} alt="rightImage" className="mt-10" />
+          <div className="w-[50%] px-16">
+            <Image src={rightImage} width={500} alt="rightImage" className="mt-10" />
           </div>
-          <div className="w-[50%] ">
-            <Image src={leftImage} alt="leftImage" className="mt-10" />
+          <div className="w-[50%]">
+            <Image src={leftImage} width={500} alt="leftImage" className="mt-10" />
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ export default function CustomCountUp({ count, countTitle }) {
     <div className="text-center">
       <VisibilitySensor onChange={isVisible => setStartCountUp(isVisible)}>
         <h1 className="text-9xl font-extrabold text_strock">
-          {startCountUp && <CountUp end={count} duration={9} />}%
+          {startCountUp && <CountUp end={count} duration={5} />}%
         </h1>
       </VisibilitySensor>
       <p className="text-2xl font-semibold text-white">{countTitle}</p>
