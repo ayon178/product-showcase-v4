@@ -61,10 +61,10 @@ const Agency = () => {
         <h1 className="text-white text-2xl font-medium">
           Mill maintenance products are from
         </h1>
-        <h1 className="text-6xl font-bold text-white mt-5 mb-2">Rn agencies</h1>
+        <h1 className="text-6xl font-bold text-white mt-5 mb-2">RN Agencies</h1>
         <h1 className="text-white text-xl font-medium">
-          Trasted factory equipment partner <br />
-          for your production
+          Trusted factory equipment partner <br />
+          for your production system
         </h1>
 
         <div className="flex items-center gap-4 mt-10 w-[44%]">

@@ -69,7 +69,7 @@ const Spec = () => {
           className="-mb-[80px] z-0 ml-[30%]"
         /> */}
         <div className="flex justify-center w-full">
-          <h1 className="text-primaryText w-fit text-7xl font-bold z-10 border-b-8 border-[#FD9F32]">
+          <h1 className="text-primaryText w-fit text-4xl font-bold z-10 border-b-8 border-[#FD9F32]">
             Product Specifications
           </h1>
         </div>
@@ -190,7 +190,7 @@ const Spec = () => {
               <h1 className="text-3xl font-semibold mb-4 text-white">
                 Air Flow Meter
               </h1>
-              {leftPartData.map((item, index) => (
+              {iconData.map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <Image src={bullet} alt="bullet" width={10} height={10} />
                   <p className="text-white font-semibold">{item.title}</p>
@@ -201,9 +201,9 @@ const Spec = () => {
           <div className="w-[45%] spec_right right_bottom_radius">
             <div className="w-fit ml-auto py-28 px-4">
               <h1 className="text-3xl font-semibold mb-4 text-white">
-                Air Leak Prevention
-              </h1>
-              {iconData.map((item, index) => (
+                Air Leak Detector
+              </h1>{' '}
+              {leftPartData.map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <Image src={bullet} alt="bullet" width={10} height={10} />
                   <p className="text-white font-semibold">{item.title}</p>

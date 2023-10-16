@@ -23,7 +23,7 @@ const images = [
     image: thirdImage,
     alt: 'Image 3',
     title: 'Achieve Zero Air Leak',
-    text: 'Precisely quantify the Air Leaks,take proper measure to prevent wastage & damage',
+    text: 'Precisely quantify the Air Leaks & take proper measure to prevent wastage & damage',
   },
 ]
 
@@ -115,7 +115,7 @@ const FocusedSlider = () => {
             </h1>
             <p
               className={`text-lg  text-white font-semibold mt-3 ${
-                currentSlide === 0 ? 'w-1/2' : 'w-2/3'
+                currentSlide === 0 ? 'w-2/3' : 'w-[55%]'
               }`}
             >
               {images[currentSlide].text}
