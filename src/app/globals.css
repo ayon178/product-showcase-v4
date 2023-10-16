@@ -210,3 +210,10 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.login_main_bg {
+  background-color: #fff;
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  border: 1px solid #9ca3af !important;
+}

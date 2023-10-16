@@ -1,19 +1,11 @@
 'use client'
 
 import Agency from '@/components/agency/Agency'
-import Benefit from '@/components/benifit/Benefit'
-import Brand from '@/components/branding/Brand'
-import Cta from '@/components/cta/Cta'
 import Cta2 from '@/components/cta2/Cta2'
 import Detection from '@/components/detection/Detection'
-import Market from '@/components/market/Market'
-import MarketV2 from '@/components/market/MarketV2'
 import Navbar from '@/components/shared/Navbar'
 import FocusedSlider from '@/components/slider/FocusedSlider'
-import RandomPositionSlider from '@/components/slider/RandomPositionSlider'
-import SwiperAutoSlider from '@/components/slider/Slider'
 import Spec from '@/components/spec/Spec'
-import Specification from '@/components/specification/Specification'
 import WhyChooseUs from '@/components/why/WhyChooseUs'
 import gsap from 'gsap'
 import { useEffect, useState } from 'react'
@@ -28,43 +20,50 @@ export default function Home() {
       : null
 
   useEffect(() => {
-    const navbar = document.querySelector('#navbar')
-    const text = document.querySelectorAll('.text_color')
-    const timeline = gsap.timeline({ paused: true })
-
-    timeline.to(navbar, {
-      // backgroundColor: 'red',
-      backdropFilter: 'blur(10px)',
-      duration: 0.1,
-      ease: 'power3.inOut',
-      backgroundColor: 'rgba(0, 0, 0, 0.5)',
-      marginTop: 0,
-      paddingBottom: '1rem',
-      paddingTop: '1rem',
-    })
-
-    timeline.to(text, {
-      color: '#fff',
-      ease: 'power3.inOut',
-    })
-
-    setLoadingStartTime(performance.now())
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 1000)
-
-    const scrollListener = () => {
-      if (window.scrollY === 0) {
-        timeline.reverse()
-      } else {
-        timeline.play()
+    if (typeof window !== 'undefined') {
+      if (!token) {
+        window.location.href = '/login'
+        return null
       }
-    }
 
-    window.addEventListener('scroll', scrollListener)
+      const navbar = document.querySelector('#navbar')
+      const text = document.querySelectorAll('.text_color')
+      const timeline = gsap.timeline({ paused: true })
 
-    return () => {
-      window.removeEventListener('scroll', scrollListener)
+      timeline.to(navbar, {
+        // backgroundColor: 'red',
+        backdropFilter: 'blur(10px)',
+        duration: 0.1,
+        ease: 'power3.inOut',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        marginTop: 0,
+        paddingBottom: '1rem',
+        paddingTop: '1rem',
+      })
+
+      timeline.to(text, {
+        color: '#fff',
+        ease: 'power3.inOut',
+      })
+
+      setLoadingStartTime(performance.now())
+      setTimeout(() => {
+        setIsLoading(false)
+      }, 1000)
+
+      const scrollListener = () => {
+        if (window.scrollY === 0) {
+          timeline.reverse()
+        } else {
+          timeline.play()
+        }
+      }
+
+      window.addEventListener('scroll', scrollListener)
+
+      return () => {
+        window.removeEventListener('scroll', scrollListener)
+      }
     }
   }, [])
 
