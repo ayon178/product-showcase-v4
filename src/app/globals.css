@@ -22,6 +22,10 @@ body {
   border-radius: 0 1rem 0 1rem !important;
 }
 
+.right_top_left_bottom_radius_big {
+  border-radius: 0 4rem 0 4rem !important;
+}
+
 .left_top_right_bottom_radius_big {
   border-radius: 1.5rem 0 1.5rem 0 !important;
 }
@@ -139,6 +143,27 @@ body {
   width: 50%;
 }
 
+.spec_top {
+  background-image: url('../assets/specTwo/spec_top.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.spec_left {
+  background-image: url('../assets/specTwo/spec_left.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.spec_right {
+  background-image: url('../assets/specTwo/spec_right.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* Agency */
 .agency_bg {
   background-image: url('../assets/agency/agency_bg.png');
@@ -150,15 +175,7 @@ body {
 
 /* Detection */
 .detection_bg_one {
-  background-image: url('../assets/detection/bg_1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-}
-
-.detection_bg_two {
-  background-image: url('../assets/detection/bg_2.png');
+  background-image: url('../assets/detection/bg_1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -173,7 +190,7 @@ body {
 
 /* Login */
 .login_bg {
-  background-image: url('../assets/detection/bg_1.png');
+  background-image: url('../assets/detection/bg_1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -186,4 +203,10 @@ body {
 
 .real_shadow {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.no_wrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

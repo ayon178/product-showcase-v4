@@ -10,7 +10,7 @@ const images = [
   {
     image: mainImage,
     alt: 'Image 1',
-    title: 'REVOLUTIONAR CONCEPT in EQUIPMENT MAINTENANCE',
+    title: 'REVOLUTIONARY CONCEPT in EQUIPMENT MAINTENANCE',
     text: 'Infrared Scanning / Thermography to assess the condition of your Electrical Machineries',
   },
   {
@@ -83,11 +83,35 @@ const FocusedSlider = () => {
           />
           <div
             className={`absolute top-[40%] ${
-              currentSlide === 0 ? 'right-1 -mr-[40%]' : 'left-16 '
+              currentSlide === 0 ? 'right-1 -mr-[8%]' : 'left-28 '
             } transform -translate-y-1/2 text-white`}
           >
-            <h1 className="text-5xl text-white font-semibold w-1/2">
-              {images[currentSlide].title}
+            <h1 className="text-4xl text-white font-semibold w-1/2">
+              {currentSlide === 2 ? (
+                <span
+                  style={{ lineHeight: 1.2 }}
+                  className="text-4xl text-white no_wrap"
+                >
+                  <span className="text-gray-400 ">Achieve</span>
+                  <br /> Zero Air Leak
+                </span>
+              ) : currentSlide === 1 ? (
+                <span
+                  style={{ lineHeight: 1.2 }}
+                  className="text-4xl text-white no_wrap"
+                >
+                  <span className="text-gray-400 ">Air we breathe is free</span>
+                  <br /> Compressed Air is NOT
+                </span>
+              ) : (
+                <span
+                  style={{ lineHeight: 1.2 }}
+                  className="text-4xl text-white no_wrap"
+                >
+                  <span className="text-gray-400 ">REVOLUTIONARY CONCEPT</span>
+                  <br /> in EQUIPMENT MAINTENANCE
+                </span>
+              )}
             </h1>
             <p
               className={`text-lg  text-white font-semibold mt-3 ${
@@ -97,7 +121,7 @@ const FocusedSlider = () => {
               {images[currentSlide].text}
             </p>
             <div className="flex justify-start">
-              <button className="bg-primary px-4 py-2 pointer rounded-md text-primaryText mt-8">
+              <button className="bg-[#A5A4A8] px-4 py-2 pointer font-bold rounded-md text-primaryText mt-8">
                 Call to Order
               </button>
             </div>

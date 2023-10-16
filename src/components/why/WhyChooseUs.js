@@ -14,9 +14,11 @@ const WhyChooseUs = () => {
     <div className="container items-center my-20 mx-auto flex justify-around">
       <div className="flex justify-between w-full">
         <div className="w-[90%]">
-          <Image src={maskImage} alt="mask" width={300} height={300} />
-          <Image src={border} alt="mask" width={300} height={300} />
-          <h1 className="text-xl font-medium mt-4 text-primaryText text-justify">
+          <div className="flex flex-col items-center w-full">
+            <Image src={maskImage} alt="mask" width={300} height={300} />
+            <Image src={border} alt="mask" width={300} height={300} />
+          </div>
+          <h1 className="text-[.9rem] font-medium mt-4 text-primaryText text-justify">
             {' '}
             Our mill maintence solutions are designed to save cost with
             Equipment Maintenance, Energy Conservation & Fire Safety. They are
@@ -27,7 +29,7 @@ const WhyChooseUs = () => {
           </h1>
         </div>
       </div>
-      <div className="flex flex-col items-start w-full gap-4">
+      <div className="flex flex-col items-center w-full gap-4">
         <div className="w-[70%] ">
           <Image
             src={whySimpleImage}
