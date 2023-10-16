@@ -2,6 +2,8 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
+import { fadeInDown } from '@/animation/animation'
 
 export default function Login() {
   const fixedEmail = 'demo@gmail.com'
@@ -31,14 +33,40 @@ export default function Login() {
     alert('Login Successful')
     if (typeof window !== 'undefined') {
       window.localStorage.setItem('product_v4_token', 'token')
-      window.location.href = '/welcome'
+      window.location.href = '/'
     }
   }
 
   return (
     <main className="relative flex flex-col items-center justify-center min-h-screen overflow-hidden">
-      <div className="w-full p-8 bg-white rounded-md shadow-lg drop-shadow-lg border py-10 lg:max-w-xl">
-        <h1 className="text-3xl font-bold text-center text-gray-700">Logo</h1>
+      <div className="flex items-center justify-center flex-col h-full">
+        <motion.h1
+          initial="hidden"
+          animate="visible"
+          variants={fadeInDown}
+          className="text-4xl font-bold text-primaryText"
+        >
+          Welcome to demo outlook{' '}
+        </motion.h1>
+        <motion.p
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0, y: 100 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: { duration: 0.9, delay: 1 },
+            },
+          }}
+          className="text-xl text-primaryText mt-6 mb-3"
+        >
+          Product Showcasing Site for Mill Maintenance Equipment
+        </motion.p>
+      </div>
+
+      <div className="login_bg w-full p-8 rounded-md shadow-lg drop-shadow-lg border py-10 lg:max-w-xl">
+        <h1 className="text-3xl font-bold text-center text-gray-800">Logo</h1>
         <form className="mt-6">
           <div className="mb-4">
             <label
@@ -51,7 +79,7 @@ export default function Login() {
               onChange={e => handleChange(e)}
               type="email"
               name="email"
-              className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
+              className="block w-full px-4 py-2 mt-2 text-white bg-transparent border rounded-md focus:border-gray-100 focus:ring-gray-200 focus:outline-none focus:ring focus:ring-opacity-40"
             />
           </div>
           <div className="mb-2">
@@ -65,7 +93,7 @@ export default function Login() {
               onChange={e => handleChange(e)}
               type="password"
               name="password"
-              className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border rounded-md focus:border-gray-400 focus:ring-gray-300 focus:outline-none focus:ring focus:ring-opacity-40"
+              className="block w-full px-4 py-2 mt-2 text-white bg-transparent border rounded-md focus:border-gray-100 focus:ring-gray-200 focus:outline-none focus:ring focus:ring-opacity-40"
             />
           </div>
           <Link
@@ -77,7 +105,7 @@ export default function Login() {
           <div className="mt-2">
             <button
               onClick={handleSubmit}
-              className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600"
+              className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-gray-800 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600"
             >
               Sign In
             </button>
@@ -130,6 +158,10 @@ export default function Login() {
           </Link>
         </p>
       </div>
+      <p className="absolute bottom-0 left-0 right-0 text-center bg-primaryText text-white py-2 font-bold">
+        This is a demo outlook. It is subject to changes depending on feedbacks
+        & review updates.
+      </p>
     </main>
   )
 }

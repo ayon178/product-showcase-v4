@@ -157,3 +157,12 @@ html {
   -webkit-text-stroke: 3px #ff9f34;
   color: #173176;
 }
+
+/* Login */
+.login_bg {
+  background-image: url('../assets/detection/bg_1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
