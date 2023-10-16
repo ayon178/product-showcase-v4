@@ -79,7 +79,7 @@ export default function Login() {
               onChange={e => handleChange(e)}
               type="email"
               name="email"
-              className="block w-full px-4 py-2 mt-2 text-white bg-transparent border rounded-md focus:border-gray-100 focus:ring-gray-200 focus:outline-none focus:ring focus:ring-opacity-40"
+              className="block w-full px-4 py-2 mt-2 text-black bg-transparent border rounded-md focus:border-gray-100 focus:ring-gray-200 focus:outline-none focus:ring focus:ring-opacity-40"
             />
           </div>
           <div className="mb-2">
@@ -93,7 +93,7 @@ export default function Login() {
               onChange={e => handleChange(e)}
               type="password"
               name="password"
-              className="block w-full px-4 py-2 mt-2 text-white bg-transparent border rounded-md focus:border-gray-100 focus:ring-gray-200 focus:outline-none focus:ring focus:ring-opacity-40"
+              className="block w-full px-4 py-2 mt-2 text-black bg-transparent border rounded-md focus:border-gray-100 focus:ring-gray-200 focus:outline-none focus:ring focus:ring-opacity-40"
             />
           </div>
           <Link
