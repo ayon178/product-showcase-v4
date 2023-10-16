@@ -33,7 +33,7 @@ const Detection = () => {
         <div className="container mx-auto">
           <div className="w-full mx-auto flex justify-between items-start">
             <Image src={textImage} width={850} height={400} alt="image" />
-            <div className="h-[500px] w-[400px] bg-[#173176] flex items-center justify-center right_top_left_bottom_radius">
+            <div className="h-[500px] real_shadow w-[400px] bg-[#173176] flex items-center justify-center right_top_left_bottom_radius">
               <CustomCountUp count={40} countTitle={'reduction in cost'} />
             </div>
           </div>

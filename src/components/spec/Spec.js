@@ -124,15 +124,15 @@ const Spec = () => {
           </div>
         </div> */}
 
-        <div className="w-full px-24">
+        <div className="w-full px-36">
           <Image src={imageOne} alt="imageOne" className="mt-10" />
         </div>
-        <div className="w-[95%] flex gap-4 ml-auto -mr-10">
-          <div className="w-[50%] px-16">
-            <Image src={rightImage} width={500} alt="rightImage" className="mt-10" />
+        <div className="w-[90%] flex mt-3 ml-auto -mr-16">
+          <div className="w-[40%]">
+            <Image src={rightImage} width={500} alt="rightImage" className="" />
           </div>
-          <div className="w-[50%]">
-            <Image src={leftImage} width={500} alt="leftImage" className="mt-10" />
+          <div className="w-[45%] pl-4">
+            <Image src={leftImage} width={500} alt="leftImage" className="" />
           </div>
         </div>
       </div>
