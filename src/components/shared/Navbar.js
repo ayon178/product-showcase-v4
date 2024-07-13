@@ -67,10 +67,10 @@ const Navbar = () => {
             width={50}
             height={50}
             className="image-with-shadow"
-            
+
           /> */}
 
-          <h1>LOGO</h1>
+          <h1 className='text-white'>XYZ</h1>
         </Link>
         <ul className="text_color flex-row items-center gap-9 text-md font-semibold text-white hidden md:flex">
           <li>
